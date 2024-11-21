@@ -1,0 +1,131 @@
+.challenging-design {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh; /* Full height of viewport */
+  background-color: #fff; /* Light gray background */
+}
+
+.text-section {
+  flex: 1;
+  margin-left: 10%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-info .icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.phone-number {
+  font-weight: bold;
+  color: #333;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.image-section {
+  flex: 1;
+  position: relative;
+}
+
+.image-section img {
+  width: 50%;
+  border-radius: 0 300px 0 80px; /* Custom border radius */
+  margin-left: 30%;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .challenging-design {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .image-section img {
+    border-radius: 20px;
+  }
+
+  .text-section {
+    padding: 10px;
+  }
+
+  .text-section h1 {
+    font-size: 2rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 480px) {
+  .challenging-design {
+    padding: 10px;
+  }
+
+  .text-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .contact-info .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,60 @@
+/* Container Styling */
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #f9f5f2;
+  gap: 0;
+}
+
+@media (min-width: 768px) {
+  .stats-container {
+    flex-direction: row;
+    gap: 8rem;
+  }
+}
+
+/* Individual Stat Item */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  color: #c3996b;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Divider */
+.divider {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .divider {
+    display: block;
+    height: 80%;
+    width: 1px;
+    background-color: #ddd;
+    position: absolute;
+    right: -0.5rem;
+    top: 10%;
+  }
+
+  /* No divider for last stat */
+  .stat-item:last-child .divider {
+    display: none;
+  }
+}

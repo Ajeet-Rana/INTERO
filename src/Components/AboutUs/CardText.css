@@ -1,0 +1,61 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  padding-top: 6%;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: transparent;
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #cda274;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Expanded Card */
+.card.expanded {
+  transform: translateX(20px); /* Right-swap animation */
+  height: auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card.expanded p {
+  color: #333;
+}
+
+.card.expanded .btn {
+  background-color: #fff;
+}
+
+.card.expanded .btn:hover {
+  background-color: #333;
+}
