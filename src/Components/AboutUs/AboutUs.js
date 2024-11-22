@@ -4,6 +4,8 @@ import ChallengingDesign from "./ChallengingDesign";
 import Testimonials from "./Testimonials";
 import Brands from "./Brands";
 import Stats from "./Stats";
+import RecentProjects from "./RecentProjects";
+import RecentBlogs from "./Blogs";
 
 function AboutUs() {
   return (
@@ -12,7 +14,9 @@ function AboutUs() {
       <ChallengingDesign />
       <Testimonials />
       <Brands />
+      <RecentProjects />
       <Stats />
+      <RecentBlogs />
     </>
   );
 }
