@@ -24,7 +24,7 @@ const ChallengingDesign = () => {
         <button className="btn">Get Free Estimate</button>
       </div>
       <div className="image-section">
-        <img src="chall.jpg" alt="Interior Design" />
+        <img src="chall.webp" alt="Interior Design" />
       </div>
     </div>
   );

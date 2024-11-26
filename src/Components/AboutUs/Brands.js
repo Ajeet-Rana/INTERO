@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import "./Brands.css";
 
 const brands = [
-  { name: "Modern Home", logo: "B1.png" }, // Replace with actual logo URLs
-  { name: "Vintage Style", logo: "B2.png" },
-  { name: "Brand", logo: "B3.png" },
-  { name: "Nature Home", logo: "B4.png" },
-  { name: "Classic Design Studio", logo: "B5.png" },
+  { name: "Modern Home", logo: "B1.webp" }, // Replace with actual logo URLs
+  { name: "Vintage Style", logo: "B2.webp" },
+  { name: "Brand", logo: "B3.webp" },
+  { name: "Nature Home", logo: "B4.webp" },
+  { name: "Classic Design Studio", logo: "B5.webp" },
 ];
 
 const Brands = () => {

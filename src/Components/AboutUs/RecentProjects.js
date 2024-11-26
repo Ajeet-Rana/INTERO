@@ -6,17 +6,17 @@ const RecentProjects = () => {
     {
       title: "Winery Dry Creek Building",
       category: "Art Modern",
-      image: "P1.jpg", // Replace with actual images
+      image: "P1.webp", // Replace with actual images
     },
     {
       title: "Creative Workplace Design",
       category: "Minimalist",
-      image: "P2.jpg",
+      image: "P2.webp",
     },
     {
       title: "Bedroom Interior Pot Work",
       category: "Modern",
-      image: "P3.jpg",
+      image: "P3.webp",
     },
   ];
 

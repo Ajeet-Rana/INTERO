@@ -11,7 +11,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h2 className="footer-logo">Interno</h2>
+          <div className="logo-img">
+            <img src="logo.png" alt="LOGO" />
+          </div>
           <p className="footer-description">
             We are the leading architect and interior design firm in the world.
           </p>

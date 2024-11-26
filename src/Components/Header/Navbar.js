@@ -21,7 +21,7 @@ function Navbar() {
         <div className="logo-img">
           <img src="logo.png" alt="LOGO" />
           <div className="logo-name">
-            INTERNO<div>ARCHITECTS</div>
+            AURA<div>INTERIORS</div>
           </div>
         </div>
 

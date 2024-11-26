@@ -8,21 +8,21 @@ const testimonials = [
     location: "New York, USA",
     feedback:
       "We selected Interno interior because of rigorous design background & education.",
-    image: "im1.jpg",
+    image: "im1.webp",
   },
   {
     name: "David Knight",
     location: "Sydney, Australia",
     feedback:
       "The team exceeded our expectations and emerged as leaders of our projects.",
-    image: "im2.jpg",
+    image: "im2.webp",
   },
   {
     name: "Lisa Clairton",
     location: "Paris, France",
     feedback:
       "They balanced the architectural vision and the project realities beautifully.",
-    image: "im3.jpg",
+    image: "im3.webp",
   },
 ];
 
