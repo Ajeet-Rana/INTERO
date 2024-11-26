@@ -10,7 +10,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Branding Section */}
         <div className="footer-brand">
           <h2 className="footer-logo">Interno</h2>
           <p className="footer-description">
@@ -32,29 +31,27 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Explore Section */}
         <div className="footer-explore">
           <h3>Explore</h3>
           <ul>
             <li>
-              <a href="/">About Us</a>
+              <a href="card-container">About Us</a>
             </li>
             <li>
-              <a href="/">Recent Blog</a>
+              <a href="recent-blogs">Recent Blog</a>
             </li>
             <li>
               <a href="/">Pricing Plan</a>
             </li>
             <li>
-              <a href="/">Our Projects</a>
+              <a href="recent-projects">Our Projects</a>
             </li>
             <li>
-              <a href="/">Contact Us</a>
+              <a href="footer">Contact Us</a>
             </li>
           </ul>
         </div>
 
-        {/* Contact Section */}
         <div className="footer-contact">
           <h3>Contact</h3>
           <p>53, East Birchwood Ave. Brooklyn, New York 11201, USA.</p>
@@ -65,7 +62,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright Section */}
       <div className="footer-bottom">
         <p>Copyright © Interno | Designed by Ajeet Rana</p>
       </div>

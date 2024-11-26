@@ -3,83 +3,104 @@ body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
 }
-
 .header {
   background-color: #fff;
   color: #292f36;
+
   padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
 }
 
 .logo-img {
   display: flex;
   align-items: center;
-  margin-left: 2%;
 }
 
 .logo-img img {
-  width: 10%;
+  width: 50px; /* Adjusted for responsiveness */
   height: auto;
-  max-width: 100%;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
 }
 
-.navbar ul {
+.nav-links {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.navbar ul li {
+.nav-links li {
   margin-right: 3rem;
-  cursor: pointer;
-  color: #292f36;
 }
 
-.navbar ul li:hover {
+.nav-links li a {
+  color: #292f36;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
   color: #cda274;
 }
-.logo-name {
-  font-family: "Archivo Black", sans-serif;
-  margin-left: 2%;
-}
-.logo-name div {
-  font-family: "Courier New", Courier, monospace;
-}
-.sub .social-icons {
-  display: flex;
-  gap: 4rem;
-}
 
-.social-icons i {
-  color: #e3dfda;
-  font-size: 1.2rem;
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
   cursor: pointer;
+  z-index: 1100;
 }
 
-.social-icons i:hover {
-  color: #b21b45;
+.hamburger span {
+  background-color: #292f36;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
+  .hamburger {
+    display: flex; /* Shown on smaller screens */
   }
 
-  .navbar ul {
+  .nav-links {
+    display: none; /* Hidden by default on smaller screens */
     flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .navbar ul li {
-    margin: 0.5rem 0;
+  .nav-links.show {
+    display: flex; /* Shown when the menu is toggled */
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
   }
 }

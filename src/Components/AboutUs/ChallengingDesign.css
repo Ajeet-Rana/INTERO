@@ -4,13 +4,12 @@
   align-items: normal;
   gap: 20px;
   padding: 20px;
-
   background-color: #fff; /* Light gray background */
 }
 
 .text-section {
   flex: 1;
-  margin-left: 10%;
+  margin-left: 20%;
   max-width: 600px;
   padding: 20px;
 }
@@ -74,7 +73,6 @@
 .image-section img {
   width: 50%;
   border-radius: 0 300px 0 80px; /* Custom border radius */
-  margin-left: 30%;
 }
 
 /* Responsive Design */
@@ -93,6 +91,7 @@
 
   .text-section {
     padding: 10px;
+    margin-left: 8%;
   }
 
   .text-section h1 {
@@ -113,7 +112,9 @@
   .text-section h1 {
     font-size: 1.5rem;
   }
-
+  .text-section {
+    margin-left: 2%;
+  }
   .text-section p {
     font-size: 0.8rem;
   }

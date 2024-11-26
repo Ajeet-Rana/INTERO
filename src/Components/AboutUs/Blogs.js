@@ -1,45 +1,56 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Blogs.css";
+
 const RecentBlogs = () => {
   const blogs = [
     {
       title: "Residential Interior Designer In New York, USA",
       category: "Kitchen Design",
       date: "November 23, 2021",
-      image: "x3.jpg", // Replace with actual images
+      image: "x3.jpg",
+      url: "https://www.designcafe.com/blog/modular-kitchen-interiors/kitchen-laminate-design-ideas/",
     },
     {
       title: "How To Choose The Best Wall Art & Decor House?",
       category: "Living Room",
       date: "November 23, 2021",
       image: "x1.jpg",
+      url: "https://www.designcafe.com/blog/living-room-interiors/diwali-decoration-ideas-for-living-room/",
     },
     {
       title: "Tips To Increase The Interior Value Of Your House",
       category: "Minimalist Interior",
       date: "November 23, 2021",
       image: "x2.jpg",
+      url: "https://www.designcafe.com/blog/home-decor/onam-decoration-ideas/",
     },
     {
       title: "Best Solution For Any Office & Business Interior",
       category: "Kitchen Design",
       date: "November 23, 2021",
       image: "x6.jpg",
+      url: "https://www.designcafe.com/blog/modular-kitchen-interiors/mini-kitchen-designs/",
     },
     {
       title: "Get Solution For Building Construction Work",
       category: "Living Room",
       date: "November 23, 2021",
       image: "x5.jpg",
+      url: "https://www.designcafe.com/blog/living-room-interiors/6-living-room-bench-designs/",
     },
     {
       title: "Attain The Best Finish For The Kitchen Cabinets",
       category: "Minimalist Interior",
       date: "November 23, 2021",
       image: "x4.jpg",
+      url: "https://www.designcafe.com/blog/bedroom-interiors/plywood-bed-designs/",
     },
   ];
+
+  const handleReadMore = (url) => {
+    window.open(url, "_blank"); // Opens the URL in a new tab
+  };
 
   return (
     <section className="recent-blogs">
@@ -63,7 +74,12 @@ const RecentBlogs = () => {
               <span className="blog-category">{blog.category}</span>
               <h3 className="blog-title">{blog.title}</h3>
               <p className="blog-date">{blog.date}</p>
-              <button className="read-more">➔</button>
+              <button
+                className="read-more"
+                onClick={() => handleReadMore(blog.url)}
+              >
+                ➔
+              </button>
             </div>
           </motion.div>
         ))}
